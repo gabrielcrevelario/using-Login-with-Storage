@@ -1,0 +1,83 @@
+.formBox {
+
+display:flex;
+
+
+}
+
+form {
+  
+margin-top:10%;
+margin-left: 30%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 150px;
+  font-family: sans-serif;
+
+  
+}
+nav {
+  border: solid;
+  background-color:black;
+}
+.router nav > ul {
+      display: flex;
+    justify-content: space-evenly;
+}
+.router nav > ul > li  {
+ font-family: sans-serif;
+
+}
+.router nav > ul > li > a {
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+}
+.router nav > ul > li > button {
+  color:white;
+  background: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top:1%;
+}
+button  {
+
+     background-color: #439eee;
+      border-radius: 5px;
+      border:none;
+      height:40px;
+      font-size:15px;
+
+}
+button > a {
+
+  color:white;
+  text-decoration: none;
+      font-weight: bold;
+  font-family: sans-serif;
+}
+
+/*button:hover {
+    font-weight: bold;
+     background-color: #439eee;
+     border:solid #6cb9fc 1px;
+ transition: background-color 1s;
+}*/
+input {
+      
+  border-radius:3px;
+  border:solid 1px black;
+  height:20px;
+}
+input:hover {
+      
+  border-radius:3px;
+  border:solid 2px #6cb9fc;
+  height:20px;
+}
+label {
+  font-weight: bold;
+  text-transform: capitalize;
+}
