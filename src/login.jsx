@@ -14,8 +14,7 @@ this.handlerOnSubmit = this.handlerOnSubmit.bind(this);
       };
   }
 handlerOnSubmit(event) {
-  debugger
-const email = this.state.email;
+ const email = this.state.email;
 const senha = this.state.senha;
 if(email === 'admin' && senha==='admin'){
 
@@ -24,10 +23,11 @@ localStorage.setItem('@login/senha', this.state.senha)
 
 return <Redirect  to='/home'/>
 } else {
-  <Redirect  to='/login'/>
+  return <Redirect  to='/login'/>
 }
      console.log("Email: "+ this.state.email+ " senha: "+ this.state.senha)
 }
+
 handlerOnChange(event) {
   const {name, value} = event.target;
   this.setState({[name]:value})

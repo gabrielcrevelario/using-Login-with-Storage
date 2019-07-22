@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
 import { render } from 'react-dom';
 import Login from './login'
-import Home from './home'
-import Hello from './Hello';
-import './style.css';
+import Home from './home.jsx'
+ 
 
 class App extends Component {
   constructor(props){
