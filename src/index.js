@@ -22,20 +22,7 @@ render() {
   debugger
   const email = localStorage.getItem('@login/email')
   const senha = localStorage.getItem('@login/senha')
-  if(email != null && senha != null) {
-   return (
-      <div className="router">
-     <Router>
-      <nav>    
-        <ul>
-            <li><Link to='/home'> Home </Link></li>
-             <li><button onClick={this.logout}>Logout</button></li>
-        </ul>
-      </nav>
-         <Route path='/' component={Home}/>
-  </Router>
-  </div>)
-  } else {
+  
  
   return(
     <div className="router">
@@ -43,14 +30,15 @@ render() {
       <nav>    
         <ul>        
             <li><Link to='/'> Login</Link></li>          
+            <li><Link to='/home'> Home</Link></li>       
         </ul>
       </nav>         
         <Route path='/' component={Login}/>
-       
+        <Route path='/home' component={Home}/>
     </Router>
     </div>
        )
-     }
+     
   
 }
 

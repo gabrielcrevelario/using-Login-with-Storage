@@ -16,15 +16,15 @@ this.handlerOnSubmit = this.handlerOnSubmit.bind(this);
 handlerOnSubmit(event) {
  const email = this.state.email;
 const senha = this.state.senha;
-if(email === 'admin' && senha==='admin'){
+// if(email === 'admin' && senha==='admin'){
 
 localStorage.setItem('@login/email', this.state.email)
 localStorage.setItem('@login/senha', this.state.senha)
 
-return <Redirect  to='/home'/>
-} else {
-  return <Redirect  to='/login'/>
-}
+// return <Redirect  to='/home'/>
+// } else {
+//   return <Redirect  to='/login'/>
+// }
      console.log("Email: "+ this.state.email+ " senha: "+ this.state.senha)
 }
 
